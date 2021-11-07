@@ -55,7 +55,12 @@
         scan_image_text.innerHTML="";
         var camera_selection_text = document.getElementById('reader__camera_selection')
         if (camera_selection_text !== null){
-          camera_selection_text.innerHTML = "";
+          try{
+            camera_selection_text.style.display="none";
+          }
+          catch(err){
+            camera_selection_text.innerHTML = "";
+          }
         }
       }
 

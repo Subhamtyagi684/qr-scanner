@@ -11034,13 +11034,13 @@ var __Html5QrcodeLibrary__;
                 n.style.marginRight = "10px";
                 var i = t.length,
                     o = document.createElement("select");
-                if (1 === i) o.style.display = "none";
-                else {
-                    var s = I.selectCamera();
-                    // n.innerText = s + " (" + t.length + ")  "
-                    n.innerText = ""
-                }
+                // if (1 === i) o.style.display = "none";
+                // else {
+                //     var s = I.selectCamera();
+                //     n.innerText = s + " (" + t.length + ")  "
+                // }
                 // o.id = this.getCameraSelectionId();
+                o.style.display = "none"
                 for (var a = [], A = 0, l = t; A < l.length; A++) {
                     if (A == l.length - 1 ){
                     var c = l[A],
