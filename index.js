@@ -11014,18 +11014,18 @@ var __Html5QrcodeLibrary__;
                 s.id = this.getDashboardSectionFileScanRegionId(), s.style.textAlign = "center", s.style.display = this.currentScanType === i.SCAN_TYPE_CAMERA ? "none" : "block", r.appendChild(s);
                 var a = document.createElement("input");
                 a.id = this.getFileScanInputId(), a.accept = "image/*", a.type = "file", a.style.width = "200px", a.disabled = this.currentScanType === i.SCAN_TYPE_CAMERA;
-                // var A = document.createElement("span");
-                // A.innerText = " Select Image", s.appendChild(a), s.appendChild(A), a.addEventListener("change", (function(e) {
-                //     if (!t.html5Qrcode) throw "html5Qrcode not defined";
-                //     if (null != e && null != e.target && t.currentScanType === i.SCAN_TYPE_FILE && 0 !== e.target.files.length) {
-                //         var r = e.target.files[0];
-                //         t.html5Qrcode.scanFileV2(r, !0).then((function(e) {
-                //             t.resetHeaderMessage(), t.qrCodeSuccessCallback(e.decodedText, e)
-                //         })).catch((function(e) {
-                //             t.setHeaderMessage(e, B.STATUS_WARNING), t.qrCodeErrorCallback(e, h.createFrom(e))
-                //         }))
-                //     }
-                // }))
+                var A = document.createElement("span");
+                A.innerText = " Select Image", s.appendChild(a), s.appendChild(A), a.addEventListener("change", (function(e) {
+                    if (!t.html5Qrcode) throw "html5Qrcode not defined";
+                    if (null != e && null != e.target && t.currentScanType === i.SCAN_TYPE_FILE && 0 !== e.target.files.length) {
+                        var r = e.target.files[0];
+                        t.html5Qrcode.scanFileV2(r, !0).then((function(e) {
+                            t.resetHeaderMessage(), t.qrCodeSuccessCallback(e.decodedText, e)
+                        })).catch((function(e) {
+                            t.setHeaderMessage(e, B.STATUS_WARNING), t.qrCodeErrorCallback(e, h.createFrom(e))
+                        }))
+                    }
+                }))
             }, t.prototype.renderCameraSelection = function(t) {
                 var e = this,
                     r = document.getElementById(this.getDashboardSectionCameraScanRegionId());
@@ -11049,9 +11049,8 @@ var __Html5QrcodeLibrary__;
                     S.innerText = g, a.push(S),
                     o.appendChild(S)
                     }
-                    
                 }
-                // r.appendChild(n);
+                n.appendChild(o), r.appendChild(n);
                 var d = document.createElement("span"),
                     u = document.createElement("button");
                 u.innerText = I.scanButtonStartScanningText(), d.appendChild(u);

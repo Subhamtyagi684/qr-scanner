@@ -53,7 +53,8 @@
         main_div_qrinfo.style.display="none";
         var scan_image_text = document.getElementById('reader__dashboard_section_swaplink')
         scan_image_text.innerHTML="";
-        var 
+        var camera_selection_text = document.getElementById('reader__camera_selection')
+        camera_selection_text.innerHTML="" || camera_selection_text.style.display="none";
       }
 
       function onScanSuccess(decodedText, decodedResult) {
