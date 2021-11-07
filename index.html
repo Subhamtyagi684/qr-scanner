@@ -54,7 +54,9 @@
         var scan_image_text = document.getElementById('reader__dashboard_section_swaplink')
         scan_image_text.innerHTML="";
         var camera_selection_text = document.getElementById('reader__camera_selection')
-        camera_selection_text.innerHTML="";
+        if (camera_selection_text != null){
+          camera_selection_text.innerHTML="";
+        }
       }
 
       function onScanSuccess(decodedText, decodedResult) {
