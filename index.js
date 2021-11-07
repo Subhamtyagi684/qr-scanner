@@ -11037,7 +11037,8 @@ var __Html5QrcodeLibrary__;
                 if (1 === i) o.style.display = "none";
                 else {
                     var s = I.selectCamera();
-                    n.innerText = s + " (" + t.length + ")  "
+                    // n.innerText = s + " (" + t.length + ")  "
+                    n.innerText = ""
                 }
                 o.id = this.getCameraSelectionId();
                 for (var a = [], A = 0, l = t; A < l.length; A++) {
