@@ -11154,9 +11154,9 @@ var __Html5QrcodeLibrary__;
             }, t.prototype.getHeaderMessageContainerId = function() {
                 return this.elementId + "__header_message"
             },
-            //  t.prototype.getCameraSelectionId = function() {
-            //     return this.elementId + "__camera_selection"
-            // }
+             t.prototype.getCameraSelectionId = function() {
+                return this.elementId + "__camera_selection"
+            }
             , t.prototype.getCameraScanRegion = function() {
                 return document.getElementById(this.getDashboardSectionCameraScanRegionId())
             }, t.prototype.getFileScanRegion = function() {
