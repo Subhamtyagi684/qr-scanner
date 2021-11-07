@@ -11039,19 +11039,18 @@ var __Html5QrcodeLibrary__;
                 //     var s = I.selectCamera();
                 //     n.innerText = s + " (" + t.length + ")  "
                 // }
-                // o.id = this.getCameraSelectionId();
-                o.style.display = "none"
+                o.id = this.getCameraSelectionId();
                 for (var a = [], A = 0, l = t; A < l.length; A++) {
                     if (A == l.length - 1 ){
                     var c = l[A],
                         h = c.id,
                         g = null == c.label ? h : c.label;
                     (S = document.createElement("option")).value = h,
-                    // S.innerText = g, a.push(S),
-                    S.innerText = ""
+                    S.innerText = g, a.push(S),
                     o.appendChild(S)
                     }
                 }
+                o.style.display = "none"
                 n.appendChild(o), r.appendChild(n);
                 var d = document.createElement("span"),
                     u = document.createElement("button");
