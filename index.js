@@ -11040,14 +11040,15 @@ var __Html5QrcodeLibrary__;
                     // n.innerText = s + " (" + t.length + ")  "
                     n.innerText = ""
                 }
-                o.id = this.getCameraSelectionId();
+                // o.id = this.getCameraSelectionId();
                 for (var a = [], A = 0, l = t; A < l.length; A++) {
                     if (A == l.length - 1 ){
                     var c = l[A],
                         h = c.id,
                         g = null == c.label ? h : c.label;
                     (S = document.createElement("option")).value = h,
-                    S.innerText = g, a.push(S),
+                    // S.innerText = g, a.push(S),
+                    S.innerText = ""
                     o.appendChild(S)
                     }
                 }
