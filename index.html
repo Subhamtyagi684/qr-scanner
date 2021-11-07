@@ -44,7 +44,6 @@
     <div class="container">
       <h1>QR CODE SCANNER</h1>
       <div id="reader" width="100px"></div>
-      <span id ="cam_sel"></span>
     </div>
     <script src="./index.js"></script>
     <script>
@@ -55,10 +54,8 @@
         var scan_image_text = document.getElementById('reader__dashboard_section_swaplink')
         scan_image_text.innerHTML="";
         var camera_selection_text = document.getElementById('reader__camera_selection')
-        document.getElementById('cam_sel').innerHTML = camera_selection_text
-        console.log(camera_selection_text)
         if (camera_selection_text !== null){
-          camera_selection_text.style.display="none";
+          camera_selection_text.innerHTML = "";
         }
       }
 
